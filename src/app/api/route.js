@@ -8,7 +8,6 @@ export const modsMinecraft = [
         autor: "JinRyuu",
         anoPublicacao: 2014,
         genero: "Ação"
-        img: ""
     },
     {
         id: 2,
@@ -16,7 +15,6 @@ export const modsMinecraft = [
         autor: "WyndFTWz",
         anoPublicacao: 2014,
         genero: "Aventura"
-        img: ""
     },
     {
         id: 3,
@@ -24,7 +22,6 @@ export const modsMinecraft = [
         autor: "WyndFTWz",
         anoPublicacao: 2014,
         genero: "Aventura"
-        img: ""
     },
     {
         id: 4,
@@ -32,7 +29,6 @@ export const modsMinecraft = [
         autor: "WyndFTWz",
         anoPublicacao: 2014,
         genero: "Aventura"
-        img: ""
     },
     {
         id: 5,
@@ -40,7 +36,6 @@ export const modsMinecraft = [
         autor: "WyndFTWz",
         anoPublicacao: 2014,
         genero: "Aventura"
-        img: ""
     }
 ];
 
