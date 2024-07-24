@@ -6,7 +6,7 @@ import ErroGetFetch from "./ErroGetFetch";
 import styles from "./styles/main.module.css";
 import { useState, useEffect } from "react"
 import { listAnime } from "./api/route";
-import Spinner from "./Spinner";
+import Sprigatito from "./Sprigatito";
 
 export default function Home() {
 
@@ -34,7 +34,7 @@ export default function Home() {
   }
 
   if (listCompleta[0] == null){
-    return <Spinner/>
+    return <Sprigatito/>
   }
 
   return (
