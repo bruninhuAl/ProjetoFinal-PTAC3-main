@@ -5,6 +5,7 @@ import ErroGetFetch from "./ErroGetFetch";
 import styles from "./styles/main.module.css";
 import { useState, useEffect } from "react"
 import { listAnime } from "./api/route";
+import Spinner from "./Spinner";
 
 export default function Home() {
 
