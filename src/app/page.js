@@ -12,6 +12,21 @@ export default function Home() {
   const [listCompleta, setListCompleta] = useState([]);
   const [isError, setIsError] = useState(False);
 
+  useEffect(() => {
+    const getAnimes = async() => {
+      try{
+        const objeto = await fetch('http://localhost:3000/api');
+        const data = await objeto.json();
+        setListAnime(data);
+        setListCompleta(data);
+      }
+      catch{
+        setIsError(true);
+      }
+      }
+        getAnimes();
+  }, []);
+
   return (
     <main>
      
