@@ -8,6 +8,10 @@ import { listAnime } from "./api/route";
 
 export default function Home() {
 
+  const [listAnime, setListAnime] = useState([]);
+  const [listCompleta, setListCompleta] = useState([]);
+  const [isError, setIsError] = useState(False);
+
   return (
     <main>
      
