@@ -42,7 +42,7 @@ export default function Home() {
       {listAnime.map((anime) => (
         <div className={styles.card} key={anime.id}>
           {<div className={styles.titulo}>{anime.titulo}</div>}
-          <Image className={styles.img} width={300} height={400} src={anime.linkImg} />
+          <Image className={styles.img} width={300} height={400} src={anime.img} />
           {<div className={styles.textopeq}>{anime.categoria}</div>}
           {<div className={styles.textopeq}><strong>Autor:</strong> {anime.autor}</div>}
           {<div className={styles.textopeq}><strong>Ano:</strong> {anime.anoPublicacao}</div>}
