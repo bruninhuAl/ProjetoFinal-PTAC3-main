@@ -1,10 +1,10 @@
 import { NextResponse } from "next/server";
-import { listVinil } from "../route";
+import { listAnime } from "../route";
 
 export async function GET(req){
     const id = parseInt(req.url.split('/api/')[1]);
     let objeto = null;
-    listVinil.forEach((obj)=> {
+    listAnime.forEach((obj)=> {
         if(obj.id == id){
            objeto = obj
         }
