@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "./spinner.module.css";
+import styles from "./sprigatito.module.css";
 
 export default function Spinner() {
     return (
