@@ -8,6 +8,7 @@ export const animes = [
         autor: "Akira Toriyama",
         anoPublicacao: 1989,
         genero: "Ação"
+        img: ""
     },
     {
         id: 2,
@@ -15,6 +16,7 @@ export const animes = [
         autor: "Eiichiro Oda",
         anoPublicacao: 1999,
         genero: "Aventura"
+        img: ""
     },
     {
         id: 3,
@@ -22,6 +24,7 @@ export const animes = [
         autor: "Satoshi Tajiri",
         anoPublicacao: 1995,
         genero: "Fantasia"
+        img: ""
     },
     {
         id: 4,
@@ -60,6 +63,10 @@ export const animes = [
     }
 ];
 
-export async function GET(){
-    return NextResponse.json(listaDeLivros)
-}
+export async function GET() {
+    try {
+        return NextResponse.json(listAnime)
+    } catch (error) {
+        return NextResponse.error('Erro interno do server', { status: 500 });
+    }
+};
