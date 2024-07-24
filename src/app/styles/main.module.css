@@ -40,3 +40,9 @@
   max-width: 100%;
   height: auto;
 }
+
+.textopeq2 {
+  margin: 5px 0;
+  text-align: center;
+  justify-content: center;
+}
