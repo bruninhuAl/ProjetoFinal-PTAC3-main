@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export default async function Anime({params}) {
 
     const response = await fetch("http://localhost:3000/api/" + params.id);
