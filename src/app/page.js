@@ -28,6 +28,14 @@ export default function Home() {
         getAnimes();
   }, []);
 
+  if (isError == true){
+    return <ErroGetFetch/>
+  }
+
+  if (listCompleta[0] == null){
+    return <Spinner/>
+  }
+
   return (
     <main>
      
