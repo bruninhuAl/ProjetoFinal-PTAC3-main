@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image";
 import "./styles.css";
 import Link from "next/link";
@@ -11,7 +12,7 @@ export default function Home() {
 
   const [listAnime, setListAnime] = useState([]);
   const [listCompleta, setListCompleta] = useState([]);
-  const [isError, setIsError] = useState(False);
+  const [isError, setIsError] = useState(false);
 
   useEffect(() => {
     const getAnimes = async() => {
@@ -38,9 +39,19 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-      <div>
-
-      </div>
+      {listAnime.map((anime) => (
+        <div className={styles.card} key={anime.id}>
+          {<div className={styles.titulo}>{anime.titulo}</div>}
+          <Image className={styles.img} width={300} height={400} src={anime.linkImg} />
+          {<div className={styles.textopeq}>{anime.categoria}</div>}
+          {<div className={styles.textopeq}><strong>Autor:</strong> {anime.autor}</div>}
+          {<div className={styles.textopeq}><strong>Ano:</strong> {anime.anoPublicacao}</div>}
+          {<div className={styles.textopeq}><strong>Gênero:</strong> {anime.genero}</div>}
+          <Link href={'/animes/' + anime.id}>
+          <button>Assistir</button>
+          </Link>
+        </div>
+      ))}
     </main>
   );
 }

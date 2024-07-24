@@ -1,13 +1,13 @@
 import { NextResponse } from "next/server";
-import { Link } from "react-router-dom";
 
-export const animes = [
+
+export const listAnime = [
     {
         id: 1,
         titulo: "Dragon Ball Super",
         autor: "Akira Toriyama",
         anoPublicacao: 2015,
-        genero: "Ação"
+        genero: "Ação",
         img: "https://m.media-amazon.com/images/I/71xqIymETyS.jpg"
     },
     {
@@ -15,15 +15,15 @@ export const animes = [
         titulo: "One Piece",
         autor: "Eiichiro Oda",
         anoPublicacao: 1999,
-        genero: "Aventura"
-        img: "https://images-cdn.ubuy.co.in/633ff1157e3fbc25557517c8-one-piece-poster-japanese-anime-posters.jpg"
+        genero: "Aventura",
+        img: "https://m.media-amazon.com/images/I/712qgGfT3PS._AC_UF894,1000_QL80_.jpg"
     },
     {
         id: 3,
         titulo: "Pokémon",
         autor: "Satoshi Tajiri",
         anoPublicacao: 1995,
-        genero: "Fantasia"
+        genero: "Fantasia",
         img: "https://m.media-amazon.com/images/I/612F8bfniwL._AC_UF894,1000_QL80_.jpg"
     },
     {
@@ -31,7 +31,7 @@ export const animes = [
         titulo: "My Hero Academia",
         autor: "Kōhei Horikoshi",
         anoPublicacao: 2014,
-        genero: "Super-heróis"
+        genero: "Super-heróis",
         img: "https://m.media-amazon.com/images/I/81bIkyVXM1S._AC_UF894,1000_QL80_.jpg"
     },
     {
@@ -39,7 +39,7 @@ export const animes = [
         titulo: "Jujutsu Kaisen",
         autor: "Gege Akutami",
         anoPublicacao: 2018,
-        genero: "Ação"
+        genero: "Ação",
         img: "https://m.media-amazon.com/images/I/81s+jxE5KEL._AC_SL1500_.jpg"
     },
     {
@@ -47,23 +47,23 @@ export const animes = [
         titulo: "Naruto",
         autor: "Masashi Kishimoto",
         anoPublicacao: 2007,
-        genero: "Aventura"
-        img: "https://images-cdn.ubuy.co.in/63527edf3492081cbd062a28-hislooks-naruto-poster-anime-wall-art.jpg"
+        genero: "Aventura",
+        img: "https://m.media-amazon.com/images/I/81Zj-BWityL._AC_UF894,1000_QL80_.jpg"
     },
     {
         id: 7,
         titulo: "Nanatsu no Taizai",
         autor: "Nakaba Suzuki",
         anoPublicacao: 2014,
-        genero: "Ação"
-        img: "https://img.elo7.com.br/product/zoom/1EC80D2/big-poster-do-anime-nanatsu-no-taizai-tamanho-90x-0-cm-lo002-nerd.jpg"
+        genero: "Ação",
+        img: "https://m.media-amazon.com/images/I/816MQ8ruKZL._AC_UF894,1000_QL80_.jpg"
     },
     {
         id: 8,
         titulo: "One Punch-Man",
         autor: "Yusuke Murata",
         anoPublicacao: 2012,
-        genero: "Comédia"
+        genero: "Comédia",
         img: "https://m.media-amazon.com/images/I/71oeGc311SL._AC_SL1500_.jpg"
     }
 ];
